@@ -16,7 +16,7 @@ class ClubController extends AbstractController
         ]);
     }
     
-#[Route('/clubs',nom:'app_clubs')]
+#[Route('/clubs',name :'app_clubs')]
 public function listClub(ClubRepository $repository)
 {
     $clubs=$repository->findAll();
